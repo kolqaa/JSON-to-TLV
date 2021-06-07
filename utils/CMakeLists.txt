@@ -1,16 +1,3 @@
-#set(SOURCE
-#        ${SOURCE}
-#        ${CMAKE_CURRENT_SOURCE_DIR}/cjson/utils/cJSON.c
-#        ${CMAKE_CURRENT_SOURCE_DIR}/cjson/utils/cJSON_Utils.c
-#        PARENT_SCOPE
-#        )
-#set(HEADERS
-#        ${HEADERS}
-#        ${CMAKE_CURRENT_SOURCE_DIR}/cjson/includes/cJSON.h
-#        ${CMAKE_CURRENT_SOURCE_DIR}/cjson/includes/cJSON_Utils.h
-#        PARENT_SCOPE
-#        )
-
 target_sources(packer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/jansson/src/dump.c
                               ${CMAKE_CURRENT_SOURCE_DIR}/jansson/src/error.c
                               ${CMAKE_CURRENT_SOURCE_DIR}/jansson/src/hashtable.c
