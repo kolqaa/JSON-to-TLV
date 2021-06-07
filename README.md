@@ -1,6 +1,13 @@
 # JSON-to-TLV
 Basic JSON to TLV encoder/decoder
 
+# Requirements
+
+```
+cmake >= 3.1
+
+```
+
 # How to use
 ```
 $ make
@@ -21,6 +28,7 @@ Currently only next format of JSON file is supported:
 {“sadsf”:”dsewtew”, “dsre”:3221, “sdfds”:”dsfewew”}
 ```
 2. values can be { INTEGER, STRING, BOOLEAN }
-3. No nested JSON files
+3. No nested JSON structures
 
-Not compatible with ASN.1 schema. Using simple "handmade" T-L-V encoding algorithm in the learing purpose.
+Not compatible with ASN.1 schema neither with EMV. Using a simple "handmade" T-L-V encoding algorithm for the learning purpose.
+Tested on: debian 7.1.0, ubuntu 16.04 LTS
