@@ -1,0 +1,17 @@
+#!/bin/sh
+
+BIN_DIR=$1
+
+should_fail()
+{
+	retval=$1
+	if [ $retval -eq 0 ]; then
+		echo "success"
+	else
+		echo "failed"
+		exit 1
+	fi
+}
+
+${BIN_DIR}/packer --mode=encoder --input=non_existen_file --output=result.bin --dictionary=dictionary.bin
+should_fail $?

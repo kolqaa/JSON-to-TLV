@@ -1,4 +1,5 @@
-BUILD_DIR=build
+SOURCE_ROOT := ${shell pwd}
+BUILD_DIR  := ${SOURCE_ROOT}/build
 
 all:
 	cmake -B${BUILD_DIR} -H.
