@@ -7,7 +7,7 @@ $ make
 $ cd build
 
 To encode JSON to TLV binary
-$ ./packer --mode=encoder --input=test_json_file --output=result.bin --dictionary=dictionary.bin
+$ ./packer --mode=encoder --input=json_test_file --output=result.bin --dictionary=dictionary.bin
 
 To decode TLV binary:
 $ ./packer --mode=decoder --input=result.bin --output=result_json --dictionary=dictionary.bin
