@@ -19,6 +19,9 @@ $ ./packer --mode=encoder --input=json_test_file --output=result.bin --dictionar
 To decode TLV binary:
 $ ./packer --mode=decoder --input=result.bin --output=result_json --dictionary=dictionary.bin
 
+To run basic CTest, you can use CTEST_OUTPUT_ON_FAILURE=1 to obtain more clear picture about fail error
+$ env CTEST_OUTPUT_ON_FAILURE=1 make test -C build/
+
 ```
 # Notes
 Currently only next format of JSON file is supported:
